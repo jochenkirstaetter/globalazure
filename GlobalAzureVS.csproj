@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App.GlobalAzure</RootNamespace>
-    <AssemblyName>App.GlobalAzure</AssemblyName>
+    <RootNamespace>App.GlobalAzureVS</RootNamespace>
+    <AssemblyName>App.GlobalAzureVS</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
