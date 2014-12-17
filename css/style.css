@@ -281,6 +281,13 @@ td { vertical-align: top; }
     }
 
 
+/* ------------------------------------------------------------------------- *
+ *  Section: Footer
+/* ------------------------------------------------------------------------- */
+#footer { background: #33363b; color: #777; width: 100%; }
+#footer a { color: #777; }
+#footer a:hover { color: #ccc; }
+#footer .pad { padding: 30px; }
 
 
 
