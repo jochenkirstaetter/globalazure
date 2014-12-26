@@ -271,7 +271,7 @@ td { vertical-align: top; }
     }
 
     #sliderfirst {
-	    background-color: white;
+	    /*background-color: white;*/
 		background-image: url(../img/gab2015.png);
 	    height: 192px;
 	    width: 250px;
