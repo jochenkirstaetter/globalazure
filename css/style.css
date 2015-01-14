@@ -509,6 +509,11 @@ body {
     /* Style adjustments for viewports that meet the condition */
 }
 
+@media (min-width: 768px){
+	.lead{
+		margin-left: 0;
+	}
+}
 @media (max-width: 979px) {
 
     .container.navbar-wrapper {
