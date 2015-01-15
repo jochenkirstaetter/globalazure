@@ -405,7 +405,11 @@ body {
 
 .span4 {
     text-align: center;
-    width: 300px;
+    width: 32%;
+}
+
+.span6 {
+    width: 48%;
 }
 
 /* CUSTOMIZE THE CAROUSEL
