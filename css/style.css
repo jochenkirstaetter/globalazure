@@ -509,6 +509,11 @@ body {
     /* Style adjustments for viewports that meet the condition */
 }
 
+@media (min-width: 768px){
+	.lead{
+		margin-left: 0;
+	}
+}
 @media (max-width: 979px) {
 
     .container.navbar-wrapper {
@@ -596,6 +601,13 @@ body {
     }
 }
 
+/* Styles for featurette on desktop*/
+ .featurette-image.pull-left {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 15px 20px 0;
+    }
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
