@@ -184,13 +184,9 @@
                     </li>-->
                 </ul>
                 <ul class="thumbnails">
-                    <li class="span6">
-                        <h2 class="featurette-heading muted">Sponsorship Opportunities</h2>
-                        <p class="lead">For exhibition and sponsorship opportunities, contact Jochen Kirst&auml;tter at <a rel="me" href="" class="email obfuscated" data-email="mscc kirstaetter name"></a></p>
-                    </li>
-                    <li class="span6">
-                        <h2 class="featurette-heading muted">Partner Opportunities</h2>
-                        <p class="lead">For information on trade opportunities contact <a rel="me" href="" class="email obfuscated" data-email="mscc kirstaetter name"></a></p>
+                    <li>
+                        <h2 class="featurette-heading muted">Sponsorship &amp; Partner Opportunities</h2>
+                        <p class="lead">For exhibition, sponsorship and information on trade opportunities, contact Jochen Kirst&auml;tter at <a rel="me" href="" class="email obfuscated" data-email="mscc kirstaetter name"></a></p>
                     </li>
                 </ul>
             </div>
@@ -229,6 +225,26 @@
         </div>
     </footer>
 
+    <script>
+        // Show any email address(es)
+        (function () {
+            var emailNodes = document.querySelectorAll('.email.obfuscated');
+            if (emailNodes) {
+                for (var i = 0; i < emailNodes.length; i++) {
+                    var emailNode = emailNodes[i];
+                    if (emailNode && emailNode.dataset) {
+                        var obfuscated = emailNode.dataset.email
+                            .replace(/ /, "@")
+                            .replace(/ /, ".");
+                        emailNode.setAttribute('href', 'mailto:' + obfuscated);
+                        emailNode.textContent = obfuscated;
+                        console.log(obfuscated);
+                    }
+                }
+            }
+        })();
+    </script>
+
     <!-- JavaScript at the bottom for fast page loading -->
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -247,18 +263,6 @@
                 $('#myCarousel').carousel()
             })
         }(window.jQuery)
-
-        // Show any email address(es)
-        (function () {
-            var emailNode = document.querySelector('.email.obfuscated');
-            if (emailNode && emailNode.dataset) {
-                var obfuscated = emailNode.dataset.email;
-                emailNode.setAttribute('href', 'mailto:' + obfuscated
-                      .replace(/ /, "@")
-                      .replace(/ /, "."));
-                console.log(obfuscated);
-            }
-        })();
     </script>
 
     <!-- Asynchronous Google Universal Analytics snippet. Change UA-XXXXX-X to be your site's ID.
