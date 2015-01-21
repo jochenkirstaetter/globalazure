@@ -379,6 +379,19 @@ body {
     color: #5a5a5a;
 }
 
+a {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border-bottom: 1px solid #777;
+    color: #777;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
 .muted {
     color: #999;
 }
@@ -412,6 +425,22 @@ body {
     width: 48%;
 }
 
+#nav-bottom ul {
+    list-style: none;
+}
+/*#nav-bottom ul:before, #nav-bottom ul:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+#nav-bottom ul:after {
+    clear: both;
+}*/
+#nav-bottom ul > li {
+    display: inline;
+    padding: 0 1%;
+    line-height: 140%;
+}
 /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
@@ -495,6 +524,7 @@ body {
 
         #footer a:hover {
             color: #ccc;
+            border-bottom: 1px solid #ccc;
         }
 
     #footer .pad {

@@ -215,9 +215,11 @@
                 </p>
             </div><!--/#copyright-->
             <div id="nav-bottom">
-                <p>
-                    <a href="http://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/pages/Code_of_Conduct" target="_blank">Code of Conduct</a>
-                </p>
+                <ul>
+                    <li><a href="" class="email obfuscated" data-email="mscc kirstaetter name">Contact Us</a></li>
+                    <li><a href="http://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/pages/Code_of_Conduct" target="_blank">Code of Conduct</a></li>
+                    <li><a href="https://twitter.com/MSCraftsman" target="_blank">Follow @MSCraftsman</a></li>
+                </ul>
             </div>
             <div id="credit">
                 <p>Powered by proud and skillful craftsmen in Mauritius.</p>
@@ -237,7 +239,9 @@
                             .replace(/ /, "@")
                             .replace(/ /, ".");
                         emailNode.setAttribute('href', 'mailto:' + obfuscated);
-                        emailNode.textContent = obfuscated;
+                        if (!emailNode.textContent) {
+                            emailNode.textContent = obfuscated;
+                        }
                         console.log(obfuscated);
                     }
                 }
