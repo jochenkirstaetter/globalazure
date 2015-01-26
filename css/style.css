@@ -406,6 +406,19 @@ ul, ol {
     list-style: none;
 }
 
+.header .logo {
+    margin: 0 auto;
+    min-width: 30px;
+    width: 5%;
+    height: auto;
+}
+
+.header img {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+
 .muted {
     color: #999;
 }
