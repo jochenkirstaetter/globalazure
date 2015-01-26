@@ -388,8 +388,22 @@ a {
     color: #777;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: none;
+
+    a:hover {
+        text-decoration: none;
+    }
+
+h3, ol, ul, li, time {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 .muted {
@@ -401,20 +415,21 @@ a:hover {
     list-style: none;
 }
 
-.thumbnails:before, .thumbnails:after {
-    display: table;
-    line-height: 0;
-    content: "";
-}
-.thumbnails:after {
-    clear: both;
-}
+    .thumbnails:before, .thumbnails:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
 
-.thumbnails > li {
-    float: left;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
+    .thumbnails:after {
+        clear: both;
+    }
+
+    .thumbnails > li {
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
 
 .span4 {
     text-align: center;
@@ -428,7 +443,7 @@ a:hover {
 #nav-bottom ul {
     list-style: none;
 }
-/*#nav-bottom ul:before, #nav-bottom ul:after {
+    /*#nav-bottom ul:before, #nav-bottom ul:after {
     display: table;
     line-height: 0;
     content: "";
@@ -436,11 +451,52 @@ a:hover {
 #nav-bottom ul:after {
     clear: both;
 }*/
-#nav-bottom ul > li {
-    display: inline;
-    padding: 0 1%;
+    #nav-bottom ul > li {
+        display: inline;
+        padding: 0 1%;
+        line-height: 140%;
+    }
+
+.list-item:first-child {
+    border-top: 3px solid #999;
+}
+
+.list-item:last-child {
+    border-bottom: 3px solid #999;
+}
+
+.list-item-agenda {
+    position: relative;
+    overflow: hidden;
+    font-size: 90%;
     line-height: 140%;
 }
+
+.list-item {
+    padding: 1%;
+    border-bottom: 1px solid #999;
+    text-align: left;
+}
+
+.list-item-agenda .time-slot {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 2%;
+    width: 28%;
+}
+
+.list-item-agenda .time-info-full {
+    width: 70%;
+}
+
+.list-item-agenda .time-info {
+    position: relative;
+    display: block;
+    float: left;
+    width: 57%;
+}
+
 /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
@@ -543,11 +599,12 @@ a:hover {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media (min-width: 768px){
-	.lead{
-		margin-left: 0;
-	}
+@media (min-width: 768px) {
+    .lead {
+        margin-left: 0;
+    }
 }
+
 @media (max-width: 979px) {
 
     .container.navbar-wrapper {
@@ -636,12 +693,12 @@ a:hover {
 }
 
 /* Styles for featurette on desktop*/
- .featurette-image.pull-left {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 15px 20px 0;
-    }
+.featurette-image.pull-left {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 15px 20px 0;
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
