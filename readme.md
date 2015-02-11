@@ -1,4 +1,4 @@
-# [Global Azure Bootcamp 2015] (http://gwabmauritius.azurewebsites.net/)
+# [Global Azure Bootcamp 2015](http://gwabmauritius.azurewebsites.net/)
 
 In April of 2013 we held the first Global Windows Azure Bootcamp at more than 
 90 locations around the globe! In March 2014 we topped that with 136 locations! 
@@ -11,10 +11,10 @@ More background information here: http://global.azurebootcamp.net/
 
 ## Open Source project
 
-This project is one playground of the [Mauritius Software Craftsmanship Community] (http://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/).
+This project is one playground of the [Mauritius Software Craftsmanship Community](http://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/).
 And the MSCC needs YOUR help! 
 
-In preparation of the [#GlobalAzure] (https://twitter.com/search?q=%23GlobalAzure) event next year 
+In preparation of the [#GlobalAzure](https://twitter.com/search?q=%23GlobalAzure) event next year 
 the community needs to have a local website for Mauritius. Any interested person 
 can voluntarily contribute to that project here on GitHub.
 
