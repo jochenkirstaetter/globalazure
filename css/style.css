@@ -576,6 +576,22 @@ ul, ol {
     margin-top: -50px;
 }
 
+.banner {
+    min-height: 120px;
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.voilahotel {
+    background: url(/img/voilahotel.jpg) no-repeat center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
 
 /* ------------------------------------------------------------------------- *
  *  Section: Footer
